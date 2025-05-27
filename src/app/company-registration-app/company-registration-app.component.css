@@ -1,0 +1,67 @@
+.registration{
+    background-color: white;
+    margin: 0;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.registration input{
+    width: 350px;
+    height: 25px;
+    margin: 3px;
+}
+
+.registration label{
+    margin: 10px;
+    padding: 10px;
+}
+
+.turnover{
+    display: flex;
+    align-items:center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.turnover div{
+    align-items: center;
+    margin: auto;
+    padding: auto;
+}
+
+.turnover div input{
+  width: 60px;
+height: 25px;  
+text-align: center;
+}
+
+.turnover div label{
+    text-align: center;
+}
+
+form button{
+    width: 200px;
+    height: 40px;
+    align-content: center;
+    background-color: green;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+}
+
+.side{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.submitDiv{
+    display: flex;
+    justify-content: center;
+
+}

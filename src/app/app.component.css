@@ -1,0 +1,9 @@
+
+.main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 110vh;
+    width: 110vw;
+    background-color: #bccae4;
+}

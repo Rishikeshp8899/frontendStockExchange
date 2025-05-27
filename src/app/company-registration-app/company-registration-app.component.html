@@ -1,0 +1,55 @@
+<div class="side">
+<div class="registration">
+<h1>Registration</h1>
+<hr>
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <label  for="company_name">Company Name:</label>
+    <input formControlName="company_name" id="company_name">
+    <br>
+    <label for="company_email">Company Email:</label>
+    <input formControlName="company_email"  id="company_email" placeholder="">
+    <br>
+    <label for="password">Password:</label>
+    <input formControlName="password" style="margin-left: 44px;" id="password" placeholder="">
+    <br>
+    <label for="contact_no">Contact No:</label>
+    <input formControlName="contact_no" style="margin-left: 33px;" id="contact_no" placeholder="">
+    <br>
+    <label for=" location">Location:</label>
+    <input formControlName="location" style="margin-left: 48.3px;" id="location" placeholder="">
+    <br>
+    <div class="turnover">
+        <h3> Previous Turnover (Cr)</h3>
+    <div>
+        <label for="turnover_no_1">Year 1</label>
+         <input formControlName="turnover_no_1"  id="turnover_no_1" placeholder="">
+    </div>
+    <div>
+        <label for="turnover_no_2">Year 2</label>
+        <input formControlName="turnover_no_2" id="turnover_no_2" placeholder="">
+    </div>
+    <div>
+        <label for="turnover_no_3">Year 3</label>
+        <input formControlName="turnover_no_3" id="turnover_no_3" placeholder="">
+    </div>
+    <div>
+        <label for="turnover_no_4">Year 4</label>
+        <input formControlName="turnover_no_4" id="turnover_no_4" placeholder="">
+    </div>
+    <div>
+        <label for="turnover_no_5">Year 5</label>
+        <input formControlName="turnover_no_5" id="turnover_no_5" placeholder="">
+    </div>
+    </div>
+    <div class="submitDiv">
+     <button type="submit">Submit</button>    
+    </div>
+ 
+</form>
+
+
+</div>
+
+
+</div>
+
