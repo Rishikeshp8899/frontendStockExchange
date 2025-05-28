@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators ,ReactiveFormsModule } from '@angular/forms';
 import {CompanyServiceService} from '../company-service.service';
-import { HttpClientModule } from '@angular/common/http';
+
 
 
 @Component({
   selector: 'app-company-registration-app',
   standalone: true,
-  imports: [ReactiveFormsModule,HttpClientModule],
+  imports: [ReactiveFormsModule],
   templateUrl: './company-registration-app.component.html',
   styleUrl: './company-registration-app.component.css'
 })
@@ -23,11 +23,11 @@ registerForm=new FormGroup(
       Validators.required,Validators.maxLength(10)
     ]),
     location:new FormControl<string>(''),
-    turnover_no_1:new FormControl<Number>(0),
-    turnover_no_2:new FormControl<Number>(0),
-    turnover_no_3:new FormControl<Number>(0),
-    turnover_no_4:new FormControl<Number>(0),
-    turnover_no_5:new FormControl<Number>(0)
+   turnover_no_1: new FormControl<number>(0),
+turnover_no_2: new FormControl<number>(0),
+turnover_no_3: new FormControl<number>(0),
+turnover_no_4: new FormControl<number>(0),
+turnover_no_5: new FormControl<number>(0)
   }
 );
 
