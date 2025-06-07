@@ -6,14 +6,15 @@
     flex-direction: column;
     align-items: center;
     width: 600px;
-    height: 500px;
+    height: 450px;
     border-radius: 20px;
 }
 
 .registration input{
     width: 350px;
     height: 25px;
-    margin: 3px;
+    margin: 5px;
+    padding: 5px;
 }
 
 .registration label{
