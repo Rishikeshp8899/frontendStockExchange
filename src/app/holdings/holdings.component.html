@@ -1,0 +1,41 @@
+<div class="holding-table">
+<table>
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>Buy Price</th>
+      <th>Current Price</th>
+      <th>Quantity</th>
+      <th>Modify Holding</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+   
+      <ng-container *ngFor="let stock of holdings">
+        <div *ngIf="getCheckProfitLoss(stock.currentPrice,stock.buyPrice); else noProfit">
+            <tr class="profit-holding">
+          <td>{{ stock.companyName }}</td>
+          <td>{{ stock.buyPrice }}</td>
+          <td>{{ stock.currentPrice }}</td>
+          <td>{{ stock.quantity }}</td>
+          <td><button class="butt-holding">📝</button></td>
+          <td><button class="butt-holding">👉</button></td>
+        </tr>
+        </div>
+        <ng-template #noProfit>
+              <tr class="loss-holding">
+          <td>{{ stock.companyName }}</td>
+          <td>{{ stock.buyPrice }}</td>
+          <td>{{ stock.currentPrice }}</td>
+          <td>{{ stock.quantity }}</td>
+          <td><button class="butt-holding" >📝</button></td>
+          <td><button class="butt-holding">👉</button></td>
+        </tr>
+        </ng-template>
+      </ng-container>
+
+  </tbody>
+</table>
+</div>
+

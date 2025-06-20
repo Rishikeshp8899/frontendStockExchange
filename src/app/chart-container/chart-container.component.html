@@ -1,5 +1,5 @@
 <!--Main-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.44.2/apexcharts.min.css">
+
 <div class="main-containner">
             <div class="main-card">
                 <div class="card">
@@ -51,10 +51,20 @@
             <div class="chart" id="chart">
                 <div class="chart-cards">
                     <h2 class="chart-title">
-                        Purchase and Sales Order
+                        Live Stock Price Chart
                     </h2>
                     <div id="area-charts">
-
+<apx-chart
+[series]="series"
+  [chart]="chart"
+  [xaxis]="xaxis"
+  [dataLabels]="dataLabels"
+  [stroke]="stroke"
+  [fill]="fill"
+  [tooltip]="tooltip" 
+  id="apex"
+>
+</apx-chart>
                     </div>
                 </div>
             </div>

@@ -3,7 +3,7 @@ import {CompanyRegistrationAppComponent} from './company-registration-app/compan
 import {CompanyDashboardAppComponent} from './company-dashboard-app/company-dashboard-app.component';
 import {CompanyComponent} from './company/company.component';
 import {ChartContainerComponent} from './chart-container/chart-container.component';
-
+import { HoldingsComponent } from './holdings/holdings.component';
 
 export const routes: Routes = [
 
@@ -18,6 +18,9 @@ export const routes: Routes = [
     children:[
       {
         path:'chart',component:ChartContainerComponent
+      },
+       {
+        path:'holdings',component:HoldingsComponent
       }
     ]
   }

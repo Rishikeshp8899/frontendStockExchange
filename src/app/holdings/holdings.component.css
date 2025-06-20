@@ -1,0 +1,46 @@
+table, th, td {
+ 
+  border-collapse: collapse;
+  padding: 8px;
+}
+
+table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+th {
+  background-color: #070000;
+  color: aliceblue;
+}
+
+.holding-table{
+  width: 75vw;
+  background-color: azure;
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
+  border:none;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.profit-holding{
+  background-color: green; 
+  color: aliceblue;
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.loss-holding{
+  background-color: #8B0000; 
+  color: aliceblue;
+  font-size: 17px;                        
+  font-family: "Times New Roman", Times, serif;
+}
+
+.butt-holding{
+  background-color:transparent;
+  width: 4vw;
+  height: 4vh;
+  font-size: 20px;
+}
