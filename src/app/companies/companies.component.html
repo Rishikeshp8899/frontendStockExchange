@@ -1,0 +1,12 @@
+<div class="companies-container">
+  <div class="main-companies">
+    <div *ngFor="let company of companies" class="card-companies">
+      <div class="image-companies">
+        <img [src]="company.image" alt="{{ company.name }}" width="100" />
+        <h3>{{ company.name }}</h3>
+        <p>Price: ₹{{ company.price }}</p>
+         <button (click)="setName('ram')">Click Me</button>
+      </div>
+    </div>
+  </div>
+</div>

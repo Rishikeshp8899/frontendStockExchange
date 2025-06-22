@@ -42,5 +42,7 @@ th {
   background-color:transparent;
   width: 4vw;
   height: 4vh;
-  font-size: 20px;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
 }

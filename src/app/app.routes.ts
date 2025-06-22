@@ -4,8 +4,14 @@ import {CompanyDashboardAppComponent} from './company-dashboard-app/company-dash
 import {CompanyComponent} from './company/company.component';
 import {ChartContainerComponent} from './chart-container/chart-container.component';
 import { HoldingsComponent } from './holdings/holdings.component';
+import { CompaniesComponent } from './companies/companies.component';
+import { TestButtonComponent } from './test-button/test-button.component';
 
 export const routes: Routes = [
+  {
+    path:'test',
+    component:TestButtonComponent
+  },
 
   {
     path:'company',
@@ -21,6 +27,9 @@ export const routes: Routes = [
       },
        {
         path:'holdings',component:HoldingsComponent
+      },
+       {
+        path:'companies',component:CompaniesComponent
       }
     ]
   }
