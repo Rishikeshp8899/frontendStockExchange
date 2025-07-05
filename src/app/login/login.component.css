@@ -1,0 +1,39 @@
+.login-app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95vw;
+    height: 95vh;
+}
+.login-main{
+    width: 35vw;
+    height: 35vh;
+    background-color: azure;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.group{
+    width: 33vw;
+    margin-top: 2vh;
+}
+.group input{
+    width: 30vw;
+    height: 3vh;
+}
+.loginSubmit{
+    display: flex;
+   justify-content: center;
+}
+.passwordT {
+    padding: 3px;
+    border: none;
+}
+.loginSubmit button{
+    width: 8vw;
+    height: 3vh;
+    background-color: green;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}

@@ -1,0 +1,33 @@
+<div class="login-app">
+<div class="login-main">
+    <h3>Login</h3>
+    <form [formGroup]="login">
+        
+        <div class="group">
+            <label for="username">Username</label><br>
+            <input formControlName="username" id="username">
+        </div>
+        <div class="group">
+            <label for="password">Password</label><br>
+            <div class="passwordT">
+                <input formControlName="password" [type]="passwordTag ? 'password' : 'text'" id="password">
+                <button (click)="passwordToggle()">
+                    <div *ngIf="passwordTag else passwordOn">
+                        <span class="material-symbols-outlined">visibility_off</span>
+                    </div>
+                    <ng-template #passwordOn>
+<span class="material-symbols-outlined">visibility</span>
+                    </ng-template>
+                </button>
+            </div>
+            
+
+        </div>
+        <div class="loginSubmit">
+           <button>Submit</button>
+        </div>
+    </form>
+    <h3>If you are not register</h3> <a routerLink="/sign">Sign Up</a>
+</div>
+
+</div>

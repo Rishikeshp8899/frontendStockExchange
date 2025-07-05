@@ -6,13 +6,22 @@ import {ChartContainerComponent} from './chart-container/chart-container.compone
 import { HoldingsComponent } from './holdings/holdings.component';
 import { CompaniesComponent } from './companies/companies.component';
 import { TestButtonComponent } from './test-button/test-button.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 export const routes: Routes = [
   {
     path:'test',
     component:TestButtonComponent
   },
-
+  {
+path:'login',
+component:LoginComponent
+  },
+{
+path:'register',
+component:RegisterComponent
+},
   {
     path:'company',
     component:CompanyComponent,

@@ -17,11 +17,8 @@ interface shareholdings {
   styleUrl: './holdings.component.css'
 })
 export class HoldingsComponent {
-  name: string = "not click";
-printCompany() {
- console.log("clicked")
-  this.name = "clicked";
-}
+ 
+
   holdings:shareholdings[]=[
  {
     companyName: 'Reliance Industries',

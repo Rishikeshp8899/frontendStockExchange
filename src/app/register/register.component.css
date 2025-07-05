@@ -1,0 +1,50 @@
+.register-app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    width: 90vw;
+}
+
+.register-main{
+    width: 40vw;
+    height: 50vh;
+    border: 1px  black;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1vw;
+}
+.group{
+    width:35vw;
+    margin-top: 2vh;
+}
+.group input{
+    width: 36vw;
+    height: 3vh;
+}
+
+.register-main form h2{
+    text-align: center;
+    padding-top: 3vh;
+    font-family: "Times New Roman", Times, serif;
+}
+.groupSubmit button{
+   background-color: green; 
+   width: 17vh;
+   height: 3vh;
+   border-radius: 0.4vw;
+   
+}
+
+.groupSubmit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.group label{
+    font-size: 1.3rem;
+}
+
